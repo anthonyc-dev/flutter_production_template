@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'features/home/presentation/pages/home_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -6,16 +7,29 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'POS App',
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Template',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF673AB7),
+          brightness: Brightness.light,
+        ),
         useMaterial3: true,
-      ),
-      home: const Scaffold(
-        body: Center(
-          child: Text('POS App'),
+        textTheme: const TextTheme(
+          headlineMedium: TextStyle(
+            fontWeight: FontWeight.bold,
+            letterSpacing: -0.5,
+          ),
         ),
       ),
+      darkTheme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF673AB7),
+          brightness: Brightness.dark,
+        ),
+        useMaterial3: true,
+      ),
+      home: const HomePage(),
     );
   }
 }

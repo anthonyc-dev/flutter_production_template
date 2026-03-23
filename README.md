@@ -42,4 +42,4 @@ lib/
 
 ## 📜 Documentation
 
-For detailed instructions on how to use this template, clone the project, or extend it, see [TEMPLATE_GUIDE.md](file:///c:/Users/Hp/Desktop/DevFiles/real-project/pos/TEMPLATE_GUIDE.md).
+For detailed instructions on how to use this template, clone the project, or extend it, see [TEMPLATE_GUIDE.md](/TEMPLATE_GUIDE.md).
